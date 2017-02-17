@@ -1,0 +1,9 @@
+<h1><%= @band.name %></h1>
+
+<div>
+  <% content_for :header do %>
+  <% end %>
+</div>
+
+<h4> Links </h4>
+<%= link_to "All bands", bands_url  %>

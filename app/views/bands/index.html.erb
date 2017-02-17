@@ -1,0 +1,14 @@
+<h1> Bands </h1>
+
+<div>
+  <% content_for :header do %>
+  <% end %>
+</div>
+
+<ul>
+  <%@bands.each do |band| %>
+    <li><%= band.name %></li>
+  <%end%>
+</ul>
+
+<%= link_to "Add Band", new_band_url %>
